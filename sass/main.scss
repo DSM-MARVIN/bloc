@@ -1,0 +1,422 @@
+$primary-color : orangered;
+@import './circleAnimation';
+
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+nav{
+    margin-top: -10px;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    // border: 1px red solid;
+
+    .logo{
+        margin: 15px 0px 10px 5px;
+        font-weight: bold;
+        font-size: 20px;
+        color: orange;
+    }
+}
+
+.nav{
+    position: absolute;
+    right: 2px;
+    display: flex;
+
+    .nav-list{
+        font-family: tahoma;
+        letter-spacing: 0.05em;
+        font-size: 14px;
+        // font-weight: 600;
+        // margin-top: 2px;
+        width: inherit;
+        padding: 25px 5px;
+        text-transform: uppercase;
+        list-style: none;
+        transition: all 1s;
+    }
+
+    .nav-list:hover{
+        background-color: orange;
+        color: white;
+    }
+
+    a{
+        color: #333;
+        text-decoration: none;
+    }
+    
+}
+
+main{
+    height: 80vh;
+    position: relative;
+    margin: 0 -px 0px -7px;
+    background-color: black;
+
+    .links{
+        position: absolute;
+        right: 2px;
+
+        .my-links{
+            color: white;
+            margin: -0.5px -1px 0 0;
+            border: 4px white solid;
+            background-color: rebeccapurple;
+            padding: 15px;
+            display: flex;
+            list-style: none;
+
+            .links-list{
+                padding: 0 5px;
+
+                .fa{
+                    transition: all 0.5s;
+                }
+                .fa:hover{
+                    color: orange;
+                }
+            }
+
+        }
+    }
+
+    .main-section{
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+        padding-top: 5%;
+        // position: absolute;
+        //  top: 20%;
+        //  left: 10%;
+
+         .w1{
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             font-size: 50px;
+         }
+         .w2{
+             margin-top: -45px;
+             font-size: 50px;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+             .bold{
+                 font-family: 'Courier New', Courier, monospace;
+             }
+         }
+         .w3{
+             font-size: 20px;
+             margin-top: -30px;
+         }
+         .w4{
+             font-size: 20px;
+             margin-top: -15px;
+             padding-bottom: 15px;
+            
+         }
+
+         .discover{
+             
+             color: white;
+             background-color: rebeccapurple;
+             padding: 8px;
+             border: 4px white solid;
+             border-radius: 20px;
+             text-decoration: none;
+             letter-spacing: 0.1em;
+             transition: all 1s;
+         }
+
+         .discover:hover{
+             background-color: orange;
+         }
+
+        }
+}
+
+.about{
+    margin: 8% auto 0 auto;
+    width: 80vw;
+    // border: 4px #333 solid;
+    padding: 8px;
+    // border-radius: 10px;
+    .head{
+        font-size: 20px;
+        color: palevioletred;
+    }
+
+    .content{
+        color: #333;
+    }
+}
+
+.con-cir{
+    margin: auto;
+}
+
+.cir{
+    // text-align: center;
+    font-size: 30px;
+    margin: 8px;
+    padding: 5px;
+    max-width: max-content;
+    // border: 3px pink solid;
+    .round{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px orange solid;
+        border-left:10px royalblue solid;
+        border-top:10px lightgreen solid;
+        // border-right:10px rosybrown solid;
+
+        p{
+
+            position: absolute;
+            top: 35%;
+            left: 40%;
+
+        }
+    }
+
+}
+
+.mid-sec{
+    margin-top: 8%;
+
+    .content2{
+        background-color: white;
+        color: white;
+        width: 90vw;
+        margin: 0 auto;
+        // width: 80vw;
+        // color: #333;
+        padding: 8px;
+        // border-radius: 10px;
+        .illus{
+            margin: 0 auto;
+            width: 60vw;
+            background-repeat: no-repeat;
+            height: 35vw;
+            background-image: url(/illus-webdesign-2-768x603.png);
+            background-size: contain;
+            background-position: center;
+        }
+        .side{
+            color: #333;
+        }
+        .side-btm{
+            color: #333;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+
+          .list{
+              margin-top: 15px;
+              .list-item{
+                  list-style: none;
+              }
+          }
+
+    }
+}
+
+.price{
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.package{
+
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 3px;
+
+    ul{
+        list-style: none;
+        .fa{
+            color: rebeccapurple;
+        }
+
+    }
+
+    .p-head{
+        font-size: 20px;
+    }
+
+    .list-item{
+        border-bottom: 1px gray solid;
+        padding: 10px;
+        font-weight: bold;
+        color: #333;
+        font-size: 17px;
+    }
+    .price{
+        font-family: tahoma;
+        font-size: 18px;
+    }
+
+    a{
+        text-decoration: none;
+        // color: #333;
+        font-weight: bold;
+        padding: 4px;
+    }
+}
+
+.bft{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    .bft-list:nth-child(1){
+        text-align: center;
+        background-color: royalblue;
+        padding: 8px;
+        width: 15vw;
+
+        .fa{
+            color: #333;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    .bft-list:nth-child(2){
+        text-align: center;
+        background-color: lightgreen;
+        padding: 8px;
+        width: 15vw;
+
+        .fa{
+            color: #333;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    .bft-list:nth-child(3){
+        text-align: center;
+        background-color: orange;
+        padding: 8px;
+        width: 15vw;
+
+        .fa{
+            color: #333;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    .bft-list:nth-child(4){
+        text-align: center;
+        background-color: rebeccapurple;
+        padding: 8px;
+        width: 15vw;
+
+        .fa{
+            color: #333;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    .bft-list:nth-child(5){
+        text-align: center;
+        background-color: #333;
+        padding: 8px;
+        width: 15vw;
+
+        .fa{
+            color: #333;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+}
+
+.b-o{
+    width: 85vw;
+    
+    // margin: 0 auto;
+}
+
+footer{
+    background-color: white;
+    color: gray;
+    margin: 8px -8px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .l-s{
+        color: #333;
+        font-family: sans-serif;
+        .head{
+            color: gray;
+        }
+    }
+
+    .mid{
+        color: gray;
+        font-family: sans-serif;
+        font-size: 17px;
+
+        .w4{
+            margin-top: -10px;
+        }
+
+        input{
+            padding: 8px;
+            border: 2px #333 solid;
+            border-radius: 10px;
+        }
+
+        .submit{
+            color: #333;
+            background-color: white;
+        }
+    }
+
+    .ft-follow{
+        color: gray;
+        font-family: sans-serif;
+
+        .ft-links{
+            .fa{
+                display: block;
+                padding: 4px;
+                color: #333;
+            }
+            .fa:hover{
+                color: royalblue;
+            }
+        }
+
+        .pay-method{
+            margin-top: 20px;
+
+            .fa{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+@import './mobile';
+
+
