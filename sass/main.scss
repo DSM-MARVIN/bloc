@@ -1,5 +1,4 @@
 $primary-color : orangered;
-@import './circleAnimation';
 
 
 body{
@@ -203,7 +202,7 @@ main{
             width: 60vw;
             background-repeat: no-repeat;
             height: 35vw;
-            background-image: url(/illus-webdesign-2-768x603.png);
+            background-image: url('../images/illus-webdesign-2-768x603.png');
             background-size: contain;
             background-position: center;
         }
